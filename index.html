@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyecto DAW">
+  <title>DAW_Tarea06</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Saltar al contenido</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Tarea06</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="producto.html">Producto</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="busqueda.html">Búsqueda</a></li>
+          <li class="nav-item"><a class="nav-link" href="carrito.html" id="cart-link">Carrito <span id="cart-count">(0)</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!--Hero y el carrusel -->
+    <section id="hero" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/hero.jpg" class="d-block w-100" alt="Banner 1" style="height:300px; object-fit:cover;">
+        </div>
+        <div class="carousel-item">
+            <img src="img/hero2.jpg" class="d-block w-100" alt="Banner 2" style="height:300px; object-fit:cover;">
+        </div>
+      </div>
+    </section>
+
+    <!-- Primera seccion que hice -->
+    <section class="container py-4">
+      <h2>Categorías</h2>
+      <div class="accordion" id="acc">
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#c1">Categoría 1</button></h3>
+          <div id="c1" class="accordion-collapse collapse show" data-bs-parent="#acc">
+            <div class="accordion-body">Contenido categoría 1</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#c2">Categoría 2</button></h3>
+          <div id="c2" class="accordion-collapse collapse" data-bs-parent="#acc">
+            <div class="accordion-body">Contenido categoría 2</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- segunda-->
+    <section class="container py-4">
+      <h2>Contenido</h2>
+      <ul class="nav nav-tabs" id="tabs">
+        <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#t1">Pestaña 1</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#t2">Pestaña 2</button></li>
+      </ul>
+      <div class="tab-content p-3 border border-top-0">
+        <div class="tab-pane fade show active" id="t1">Contenido pestaña 1</div>
+        <div class="tab-pane fade" id="t2">Contenido pestaña 2</div>
+      </div>
+    </section>
+
+    <!-- las notificaciones -->
+    <div id="notif" class="position-fixed bottom-0 end-0 p-3"></div>
+  </main>
+
+  <!-- botón para subir -->
+  <button id="toTop" class="btn btn-primary">↑</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
