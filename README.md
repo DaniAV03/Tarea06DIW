@@ -1,6 +1,7 @@
-Tarea 06
+# Tarea 06
 
 Esta es mi tarea 06 de DIW
 
-Daniel Alonso Vicente
+## Autor
+*Daniel Alonso Vicente*
 
